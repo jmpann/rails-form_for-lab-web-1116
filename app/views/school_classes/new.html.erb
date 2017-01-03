@@ -1,0 +1,14 @@
+<h3>School Class Form</h3>
+
+<%= form_for(@school_class) do |f| %>
+<!-- form_for is rails formbuilder helper method. will create form builder objects based on the attributes of @school_class defined in your db table -->
+  <label>School Class Title: </label><br>
+  <%= f.text_field :title %>
+
+  <label>Room Number:</label><br>
+  <%= f.text_field :room_number%>
+
+  <%=f.submit%>
+<% end %>
+
+<!--using display erb bc formbuilder will generate the box and you obvi want to show that. -->
